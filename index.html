@@ -379,79 +379,80 @@
             </div>
             <div class="footer-subscribe">
                 <p class="paragraph">Subscribe</p>
-                <div class="subscribe-container">
+                <form class="subscribe-container">
+                    <label class="footer-label" for="sub-email"></label>
                     <input type="email" name="sub-email" id="sub-email" placeholder="E-mail"/>
                     <button type="submit" name="sub-button" id="sub-button">Subscribe
                         <svg class="sub-button-svg">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </footer>
 
-<div class="backdrop is-open">
-    <div class="modal">
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="close-btn">
+                <svg class="modal-close-image">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="paragraph">Leave your contacts and we will call you back</p>
             <form class="modal-form">
-                <div class="close">
-                    <svg class="modal-close-image">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </div>
-                <p class="paragraph">Leave your contacts and we will call you back</p>
                 <div class="input-group">
-                    <label for="username">Name</label>
+                    <label for="user-name" class="input-group-label">Name</label>
                     <div class="input-group-container">
+                        <input type="text" name="user-name" id="user-name" />
                         <svg class="input-image">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
-                        <input type="text" name="username" id="username" />
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="phone">Phone</label>
+                    <label for="phone" class="input-group-label">Phone</label>
                     <div class="input-group-container">
+                        <input type="tel" name="phone" id="phone" />
                         <svg class="input-image">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
-                        <input type="tel" name="phone" id="phone" />
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="email">Email</label>
+                    <label for="email" class="input-group-label">Email</label>
                     <div class="input-group-container">
+                        <input type="email" name="email" id="email" />
                         <svg class="input-image">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
-                        <input type="email" name="email" id="email" />
                     </div>
                 </div>
+    
                 <div class="input-group">
-                    <label for="comment">Comment</label>
-                    <textarea class="input-group-textarea" type="text" name="comment" id="comment"
+                    <label for="user-comment" class="input-group-label">Comment</label>
+                    <textarea class="input-group-textarea" name="user-comment" id="user-comment"
                         placeholder="Text input">   </textarea>
                 </div>
-            
+    
                 <div class="check-container">
-                    <!--<input type="checkbox" name="check-privacy" id="check-privacy" value="true"/>-->
-                    <label for="check-privacy">
-                        <span class="check-consent">
-                            <svg class="" width="10" height="8">
+                    <input class="input-check visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
+                    <label for="user-privacy" class="input-check-label">
+                        <span class="check-consent" id="check-privacy">
+                            <svg class="check-consent-svg" width="10" height="8">
                                 <use href="./images/icons.svg#icon-click"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the <a href=""> Privacy Policy</a>
                     </label>
                 </div>
-            
+    
                 <div class="button-container">
-                    <button type="submit" name="send" id="send">Send</button>
+                    <button class="btn-send" type="submit" name="send" id="send">Send</button>
                 </div>
-            
             </form>
+        </div>
     </div>
-</div>
 
 </body>
 

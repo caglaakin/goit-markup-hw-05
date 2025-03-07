@@ -562,8 +562,6 @@ button.order-button:focus {
 }
 
 .footer-subscribe .subscribe-container .footer-button .sub-button-svg {
-    width: 24px;
-    height: 24px;
     margin-left: 16px;
 }
 
@@ -655,7 +653,7 @@ button.order-button:focus {
 
 .modal .modal-form .close-btn:hover{
     background-color: #404BBF;
-        border: none;
+    border: none;
 }
 
 .modal .modal-form .close-btn:focus {
@@ -664,11 +662,11 @@ button.order-button:focus {
 }
 
 .modal .modal-form .close-btn:hover svg{
-    fill: white;
+    fill: #FFFFFF;
 }
 
 .modal .modal-form .close-btn:focus svg{
-    fill: white;
+    fill: #FFFFFF;
 }
 
 .modal .modal-form .input-group{
@@ -770,7 +768,7 @@ button.order-button:focus {
     display: flex;
 }
 
-.check-container .input-check-label a{
+.check-container .input-check-label .check-consent-link{
     color: #4D5AE5;
     text-decoration: underline;
 }
@@ -796,15 +794,9 @@ button.order-button:focus {
     fill: #F4F4FD;
 }
 
-.button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-}
-
 .button-container .btn-send{
     display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;

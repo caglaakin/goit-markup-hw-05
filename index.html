@@ -380,9 +380,10 @@
             <div class="footer-subscribe">
                 <p class="paragraph">Subscribe</p>
                 <form class="subscribe-container">
-                    <label class="footer-label" for="sub-email"></label>
-                    <input type="email" name="sub-email" id="sub-email" placeholder="E-mail"/>
-                    <button type="submit" name="sub-button" id="sub-button">Subscribe
+                    <label class="footer-label" for="sub-email">
+                        <input class="footer-input" type="email" name="sub-email" id="sub-email" placeholder="E-mail"/>
+                    </label>
+                    <button class="footer-button" type="submit" name="sub-button" id="sub-button">Subscribe
                         <svg class="sub-button-svg">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -395,7 +396,7 @@
     <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="close-btn">
-                <svg class="modal-close-image">
+                <svg class="modal-close-image" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -405,7 +406,7 @@
                     <label for="user-name" class="input-group-label">Name</label>
                     <div class="input-group-container">
                         <input type="text" name="user-name" id="user-name" />
-                        <svg class="input-image">
+                        <svg class="input-image" width="18px" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
@@ -414,7 +415,7 @@
                     <label for="phone" class="input-group-label">Phone</label>
                     <div class="input-group-container">
                         <input type="tel" name="phone" id="phone" />
-                        <svg class="input-image">
+                        <svg class="input-image" width="18px" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
@@ -423,13 +424,13 @@
                     <label for="email" class="input-group-label">Email</label>
                     <div class="input-group-container">
                         <input type="email" name="email" id="email" />
-                        <svg class="input-image">
+                        <svg class="input-image" width="18px" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
     
-                <div class="input-group">
+                <div class="input-group input-group-comment">
                     <label for="user-comment" class="input-group-label">Comment</label>
                     <textarea class="input-group-textarea" name="user-comment" id="user-comment"
                         placeholder="Text input">   </textarea>

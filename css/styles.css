@@ -525,13 +525,13 @@ button.order-button:focus {
     gap: 24px;   
 }
 
-.footer-subscribe .subscribe-container input{
+.footer-subscribe .subscribe-container .footer-input{
     width: 264px;
-    background-color: #2E2F42;
+    height: 40px;
+    background-color: transparent;
     border: 1px solid white;
     color: white;
     border-radius: 4px;
-    height: 40px;
     color: white;
     font-size: 12px;
     line-height: 2;
@@ -541,7 +541,7 @@ button.order-button:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-subscribe .subscribe-container button{
+.footer-subscribe .subscribe-container .footer-button{
     background-color: #4D5AE5;
     color: white;
     min-width: 165px;
@@ -561,13 +561,14 @@ button.order-button:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe .subscribe-container button svg {
+.footer-subscribe .subscribe-container .footer-button .sub-button-svg {
     width: 24px;
     height: 24px;
+    margin-left: 16px;
 }
 
-.footer-subscribe .subscribe-container button:hover,
-.footer-subscribe .subscribe-container button:focus {
+.footer-subscribe .subscribe-container .footer-button:hover,
+.footer-subscribe .subscribe-container .footer-button:focus {
     background-color: #404BBF;
 }
 
@@ -648,25 +649,34 @@ button.order-button:focus {
 }
 
 .modal-close-image{
-    width: 8px;
-    height: 8px;
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .modal-form .close-btn:hover,
+.modal .modal-form .close-btn:hover{
+    background-color: #404BBF;
+        border: none;
+}
+
 .modal .modal-form .close-btn:focus {
     background-color: #404BBF;
     border: none;
 }
 
-.modal .modal-form .close-btn:hover svg,
+.modal .modal-form .close-btn:hover svg{
+    fill: white;
+}
+
 .modal .modal-form .close-btn:focus svg{
     fill: white;
 }
 
 .modal .modal-form .input-group{
     margin-bottom: 8px;
+}
+
+.modal .modal-form .input-group-comment{
+    margin-bottom: 16px;
 }
 
 .modal .modal-form .input-group .input-group-label{
